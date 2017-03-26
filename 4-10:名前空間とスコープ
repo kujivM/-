@@ -1,0 +1,15 @@
+animal = 'fruitbat'
+def print_global():
+    print('inside print_global:', animal)
+
+print('at the top level :', animal)
+print_global()
+
+#以下の表示
+#>>> change_and_print_global()
+#Traceback (most recent call last):
+#  File "<input>", line 1, in <module>
+#    change_and_print_global()
+#  File "<input>", line 2, in change_and_print_global
+#    print('inside change_and_print_blobal:', animal)
+#UnboundLocalError: local variable 'animal' referenced before assignment
